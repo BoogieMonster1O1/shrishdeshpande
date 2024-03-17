@@ -1,10 +1,45 @@
 ---
+  import {Icon} from "astro-icon/components";
+  import InstagramIcon24 from "./icons/InstagramIcon24.astro";
+  import GithubIcon24 from "./icons/GithubIcon24.astro";
+  import LinkedinIcon24 from "./icons/LinkedinIcon24.astro";
+---
 
-  import {Icon} from "astro-icon/components";---
+<style>
+  [data-icon] {
+    @apply text-neutral-400
+  }
+</style>
 
-<div class="flex flex-row text-neutral-600 w-screen">
-  <a href="https://github.com/BoogieMonster1O1" target="_blank" class="flex items-center hover:underline">
-    <span class="mr-4"><Icon width={20} height={20} name="devicon:github"/></span>
-    GitHub
-  </a>
+<div class="flex flex-row text-neutral-500 max-w-screen-lg w-screen m-4">
+  <div class="flex flex-col gap-2 basis-2/4 font-mono text-sm">
+    <p>
+      Built with 💖 using <a href="https://astro.build" target="_blank" class="hover:underline transition">Astro</a> and <a href="https://tailwindcss.com" target="_blank" class="hover:underline transition">TailwindCSS</a>.
+    </p>
+    <p class="text-xs">
+      © 2024 Shrish Deshpande. Licensed under the GNU Affero General Public License v3.
+    </p>
+  </div>
+  <div class="flex flex-col gap-2 basis-1/4">
+    <h2 class="text-lg font-bold">Contact</h2>
+    <div class="grid grid-cols-2 gap-2 justify-start">
+      <a href="https://github.com/BoogieMonster1O1" target="_blank" class="flex gap-1 items-center hover:underline">
+        <GithubIcon24 />
+        GitHub
+      </a>
+      <a href="https://instagram.com/shrishdeshpande" target="_blank" class="flex gap-1 items-center hover:underline">
+        <InstagramIcon24 />
+        Instagram
+      </a>
+      <a href="https://linkedin.com/in/shrishdeshpande" target="_blank" class="flex gap-1 items-center hover:underline">
+        <LinkedinIcon24 />
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col gap-2 basis-1/4">
+    <h2 class="text-lg font-bold">More</h2>
+
+    <a href="/sitemap">Sitemap</a>
+  </div>
 </div>
