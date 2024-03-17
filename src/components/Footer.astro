@@ -12,21 +12,20 @@
 </style>
 
 <div class="flex flex-row text-neutral-500 max-w-screen-lg w-screen m-4">
-  <div class="flex flex-col gap-2 basis-2/4 font-mono text-sm">
+  <div class="flex flex-col gap-2 basis-1/2 font-mono text-sm">
     <p>
       Built with 💖 using <a href="https://astro.build" target="_blank" class="hover:underline transition">Astro</a> and <a href="https://tailwindcss.com" target="_blank" class="hover:underline transition">TailwindCSS</a>.
     </p>
     <p class="text-xs">
       © 2024 Shrish Deshpande. Licensed under the GNU Affero General Public License v3.
     </p>
+    <p class="text-xs">
+      Hosted on Cloudflare™ Pages. <a href="https://github.com/BoogieMonster1O1/shrishdeshpande.com" target="_blank" class="hover:underline transition">Source Code</a>
+    </p>
   </div>
   <div class="flex flex-col gap-2 basis-1/4">
     <h2 class="text-lg font-bold">Contact</h2>
-    <div class="grid grid-cols-2 gap-2 justify-start">
-      <a href="https://github.com/BoogieMonster1O1" target="_blank" class="flex gap-1 items-center hover:underline">
-        <GithubIcon24 />
-        GitHub
-      </a>
+    <div class="flex flex-col gap-1">
       <a href="https://instagram.com/shrishdeshpande" target="_blank" class="flex gap-1 items-center hover:underline">
         <InstagramIcon24 />
         Instagram
@@ -35,11 +34,19 @@
         <LinkedinIcon24 />
         LinkedIn
       </a>
+      <a href="https://github.com/BoogieMonster1O1" target="_blank" class="flex gap-1 items-center hover:underline">
+        <GithubIcon24 />
+        GitHub
+      </a>
     </div>
   </div>
   <div class="flex flex-col gap-2 basis-1/4">
     <h2 class="text-lg font-bold">More</h2>
 
-    <a href="/sitemap">Sitemap</a>
+    <div class="flex flex-row gap-1">
+      <a href="/sitemap">Sitemap</a>
+      ・
+      <a href="/rss.xml">RSS</a>
+    </div>
   </div>
 </div>
