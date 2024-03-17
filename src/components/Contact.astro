@@ -2,7 +2,7 @@
   import { Icon } from 'astro-icon/components'
 ---
 
-<section class="max-w-md mx-auto rounded-md overflow-hidden shadow-md bg-gray-800 text-white">
+<section class="max-w-md mx-auto rounded-md overflow-hidden shadow-md bg-neutral-800 text-white">
   <div class="px-6 py-4">
     <ul class="list-disc">
       <li class="flex items-center mb-3">
@@ -29,11 +29,15 @@
           Fediverse
         </a>
       </li>
-      <li class="flex items-center">
+      <li class="flex items-center mb-3">
         <a href="https://open.spotify.com/artist/6N5AY2sIadexnDQLso0NFU" target="_blank" class="flex items-center text-purple-300 hover:underline">
           <span class="mr-4"><Icon width={40} height={40} name="logos:spotify-icon"/></span>
           Spotify Artist
         </a>
+      </li>
+      <li class="flex items-center font-mono">
+        <span class="mr-4" aria-description="Discord"><Icon width={40} height={40} name="skill-icons:discord"/></span>
+        <span class="bg-neutral-900 rounded p-0.5">BoogieMonster1O1</span>
       </li>
     </ul>
   </div>

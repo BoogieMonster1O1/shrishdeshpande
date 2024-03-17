@@ -214,25 +214,31 @@
       transition: all 0.9s ease;
       animation-direction: alternate;
     }
+
+    a {
+      @apply hover:underline transition
+    }
   </style>
 
-  <body class="bg-gray-900 text-white">
+  <body class="bg-neutral-900 text-white">
     <div class="flex flex-col min-h-screen items-center">
-      <div class="flex flex-row justify-between m-4 p-1 border-b border-neutral-600 text-2xl max-w-screen-md w-screen overflow-y-auto gap-6">
-        <h1 class="flex-1 text-3xl colorChange">
+      <div class="flex flex-row justify-between m-4 pb-2 border-b border-neutral-600 max-w-screen-md w-screen overflow-y-auto gap-6 items-center">
+        <h1 class="flex-1 text-4xl colorChange">
           Shrish Deshpande
         </h1>
-        <div class="flex">
-          About
-        </div>
-        <div class="flex">
-          Projects
-        </div>
-        <div class="flex">
-          Contact
-        </div>
-        <div class="flex">
-          Blog
+        <div class="contents text-xl">
+          <div class="flex">
+            <a href="/">About</a>
+          </div>
+          <div class="flex">
+            Projects
+          </div>
+          <div class="flex">
+            <a href="/contact">Contact</a>
+          </div>
+          <div class="flex">
+            Blog
+          </div>
         </div>
       </div>
 
