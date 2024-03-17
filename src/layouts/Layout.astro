@@ -1,44 +1,44 @@
 ---
-import Footer from "../components/Footer.astro";
+  import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="My personal website" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Shrish Deshpande</title>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My personal website" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Shrish Deshpande</title>
+  </head>
 
-	<style>
-		@import 'tailwindcss/base';
-		@import 'tailwindcss/components';
-		@import 'tailwindcss/utilities';
-	</style>
+  <style>
+    @import 'tailwindcss/base';
+    @import 'tailwindcss/components';
+    @import 'tailwindcss/utilities';
+  </style>
 
-	<body class="bg-gray-800 text-white">
-		<div class="flex flex-col min-h-screen items-center">
-			<div class="flex flex-row justify-between m-4 p-1 border-b border-neutral-600 text-2xl max-w-screen-md w-screen overflow-y-auto">
-				<div class="flex">
-					About
-				</div>
-				<div class="flex">
-					Projects
-				</div>
-				<div class="flex">
-					Contact
-				</div>
-				<div class="flex">
-					Blog
-				</div>
-			</div>
+  <body class="bg-gray-800 text-white">
+    <div class="flex flex-col min-h-screen items-center">
+      <div class="flex flex-row justify-between m-4 p-1 border-b border-neutral-600 text-2xl max-w-screen-md w-screen overflow-y-auto">
+        <div class="flex">
+          About
+        </div>
+        <div class="flex">
+          Projects
+        </div>
+        <div class="flex">
+          Contact
+        </div>
+        <div class="flex">
+          Blog
+        </div>
+      </div>
 
-			<slot />
+      <slot />
 
-			<Footer />
-		</div>
-	</body>
+      <Footer />
+    </div>
+  </body>
 </html>
