@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -11,7 +12,33 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Shrish Deshpande</title>
 	</head>
-	<body class="bg-gray-900 text-white">
-		<slot />
+
+	<style>
+		@import 'tailwindcss/base';
+		@import 'tailwindcss/components';
+		@import 'tailwindcss/utilities';
+	</style>
+
+	<body class="bg-gray-800 text-white">
+		<div class="flex flex-col min-h-screen items-center">
+			<div class="flex flex-row justify-between m-4 p-1 border-b border-neutral-600 text-2xl max-w-screen-md w-screen overflow-y-auto">
+				<div class="flex">
+					About
+				</div>
+				<div class="flex">
+					Projects
+				</div>
+				<div class="flex">
+					Contact
+				</div>
+				<div class="flex">
+					Blog
+				</div>
+			</div>
+
+			<slot />
+
+			<Footer />
+		</div>
 	</body>
 </html>
