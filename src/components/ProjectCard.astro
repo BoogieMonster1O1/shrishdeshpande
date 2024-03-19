@@ -1,6 +1,10 @@
 ---
   import type { ProjectEntry } from '../data/projects.ts'
   import GithubIcon24 from '../components/icons/GithubIcon24.astro'
+
+  interface Props {
+    project: ProjectEntry
+  }
   
   const { project } = Astro.props;
 ---
