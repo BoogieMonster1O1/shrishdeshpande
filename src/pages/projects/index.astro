@@ -1,9 +1,16 @@
 ---
   import Layout from '../../layouts/Layout.astro'
+  import ProjectCard from '../../components/ProjectCard.astro'
+  
+  import { projects } from '../../data/projects.ts'
 ---
 
 <Layout>
-  <section class="flex flex-1 p-8 justify-start">
+  <section class="flex flex-1 flex-col p-8 justify-start items-center">
     <h1 class="text-3xl font-bold">Projects</h1>
+
+    <div class="grid grid-cols-2">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
   </section>
 </Layout>

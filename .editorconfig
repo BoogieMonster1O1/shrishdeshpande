@@ -6,3 +6,6 @@ indent_style = space
 
 [*.astro]
 indent_size = 2
+
+[*.ts]
+indent_size = 2

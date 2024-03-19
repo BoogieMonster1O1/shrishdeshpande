@@ -1,0 +1,26 @@
+* Projects to be added
+
+- [X] Project Kula
+- [X] Legacy Fabric
+- [X] Dimensional Doors
+- [X] InnateMC
+- [X] BMTCMate
+- [X] Caffex
+- [X] Forestry
+- [X] BattleSwift
+- [X] InvadingTaters
+- [X] NNTK
+- [X] VIMC
+- [X] Epic Fail Calculator
+- [X] Icystudy
+- [X] Variable Fundamental Quantities
+- [X] I'm Feeling 21
+- [X] HexJSON
+- [X] Enchantments-HUD
+- [X] Sudeep's Carts
+- [X] ClickUp Goals
+- [X] Binesweeper
+- [X] physicsBad
+- [X] Eye you ready for it
+- [X] gocrafter
+  
