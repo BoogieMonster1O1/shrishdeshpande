@@ -198,5 +198,13 @@ export const projects: ProjectEntry[] = [
     avatarUrl: null,
     githubUrl: 'https://github.com/BoogieMonster1O1/gocrafter',
     techStack: ['Go']
+  },
+  {
+    slug: null,
+    name: 'Personal Website',
+    description: 'The website you are currently on',
+    avatarUrl: null,
+    githubUrl: 'https://github.com/BoogieMonster1O1/shrishdeshpande',
+    techStack: ['TypeScript', 'Astro', 'Tailwind CSS']
   }
 ];

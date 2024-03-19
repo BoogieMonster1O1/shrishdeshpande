@@ -5,3 +5,7 @@
 a {
     @apply hover:underline transition
 }
+
+:root {
+  color-scheme: light dark;
+}
