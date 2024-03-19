@@ -1,8 +1,8 @@
 ---
-  import { ProjectEntry } from '../data/projects.ts'
+  import type { ProjectEntry } from '../data/projects.ts'
   import GithubIcon24 from '../components/icons/GithubIcon24.astro'
   
-  const { project }: { project: ProjectEntry } = Astro.props;
+  const data: { project: ProjectEntry } = Astro.props;
 ---
 
 <div class="flex flex-row bg-neutral-800 rounded-md shadow p-4 w-96 m-4 ">
@@ -11,9 +11,9 @@
   </div>
   <div class="flex flex-col flex-1">
     <h1 class="text-xl max-w-64 h-16 font-semibold flex flex-row gap-2 items-center">
-      <a href={project.githubUrl} target="_blank"><GithubIcon24 /></a>
-      {project.name}
+      <a href={data.project.githubUrl} target="_blank"><GithubIcon24 /></a>
+      {data.project.name}
     </h1>
-    <p class="text-neutral-300">{project.description}</p>
+    <p class="text-neutral-300">{data.project.description}</p>
   </div>
 </div>
