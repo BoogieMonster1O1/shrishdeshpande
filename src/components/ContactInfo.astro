@@ -1,45 +1,97 @@
 ---
   import { Icon } from 'astro-icon/components'
+  import ContactCard from './ContactCard.astro'
+
+  interface Contact {
+    name: string
+    url: string
+    icon: string
+    color: string
+    monospace?: boolean
+  }
+
+  const contacts: Contact[] = [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/BoogieMonster1O1',
+      icon: 'mdi:github',
+      color: 'text-white',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/shrishdeshpande',
+      icon: 'skill-icons:instagram',
+      color: 'text-pink-300',
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/shrishdeshpande/',
+      icon: 'devicon:linkedin',
+      color: 'text-indigo-300',
+    },
+    {
+      name: 'Fediverse',
+      url: 'http://tech.lgbt/@shrish',
+      icon: 'skill-icons:fediverse-dark',
+      color: 'text-green-300',
+    },
+    {
+      name: 'Spotify Artist',
+      url: 'https://open.spotify.com/artist/6N5AY2sIadexnDQLso0NFU',
+      icon: 'logos:spotify-icon',
+      color: 'text-purple-300',
+    },
+    {
+      name: 'BoogieMonster1O1',
+      url: '',
+      icon: 'skill-icons:discord',
+      color: 'text-neutral-300',
+      monospace: true,
+    },
+    {
+      name: 'Wikipedia',
+      url: 'https://en.wikipedia.org/wiki/User:BoogieMonster1O1',
+      icon: 'simple-icons:wikipedia',
+      color: 'text-gray-300',
+    },
+    {
+      name: 'Dev',
+      url: 'https://dev.to/boogiemonster1o1',
+      icon: 'skill-icons:devto-light',
+      color: 'text-neutral-300',
+    },
+    {
+      name: 'Hashnode',
+      url: 'https://hashnode.com/@boogiemonster1o1',
+      icon: 'logos:hashnode-icon',
+      color: 'text-sky-400',
+    },
+    {
+      name: 'Fueler',
+      url: 'https://fueler.io/shrishvd/',
+      icon: 'simple-icons:fueler',
+      color: 'text-cyan-300',
+    },
+    {
+      name: 'Reddit',
+      url: 'https://www.reddit.com/user/BoogieMonster1O1/',
+      icon: 'logos:reddit-icon',
+      color: 'text-orange-300',
+    },
+    {
+      name: 'Curseforge',
+      url: 'https://www.curseforge.com/members/boogiemonster1o1',
+      icon: 'simple-icons:curseforge',
+      color: 'text-gray-300',
+    },
+  ]
 ---
 
-<section class="flex flex-col mx-auto rounded-md overflow-hidden text-white">
-  <h1 class="text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 p-4">Contact</h1>
+<section class="flex flex-col mx-auto rounded-md overflow-hidden text-white justify-center">
+  <h1 class="text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 p-4 rounded-t-md">Contact</h1>
   <div class="px-6 py-4 bg-[#191919] rounded-md">
-    <ul class="grid sm:grid-cols-2 list-disc gap-4">
-      <li class="flex items-center">
-        <a href="https://github.com/BoogieMonster1O1" target="_blank" class="flex items-center text-blue-300">
-          <span class="mr-4"><Icon width={40} height={40} name="devicon:github"/></span>
-          GitHub
-        </a>
-      </li>
-      <li class="flex items-center">
-        <a href="https://www.instagram.com/shrishdeshpande" target="_blank" class="flex items-center text-pink-300">
-          <span class="mr-4"><Icon width={40} height={40} name="skill-icons:instagram"/></span>
-          Instagram
-        </a>
-      </li>
-      <li class="flex items-center">
-        <a href="https://www.linkedin.com/in/shrish-deshpande-6287561a9" target="_blank" class="flex items-center text-indigo-300">
-          <span class="mr-4"><Icon width={40} height={40} name="devicon:linkedin"/></span>
-          LinkedIn
-        </a>
-      </li>
-      <li class="flex items-center">
-        <a href="http://tech.lgbt/@shrish" target="_blank" class="flex items-center text-green-300">
-          <span class="mr-4"><Icon width={40} height={40} name="skill-icons:fediverse-dark"/></span>
-          Fediverse
-        </a>
-      </li>
-      <li class="flex items-center">
-        <a href="https://open.spotify.com/artist/6N5AY2sIadexnDQLso0NFU" target="_blank" class="flex items-center text-purple-300">
-          <span class="mr-4"><Icon width={40} height={40} name="logos:spotify-icon"/></span>
-          Spotify Artist
-        </a>
-      </li>
-      <li class="flex items-center font-mono">
-        <span class="mr-4" aria-description="Discord"><Icon width={40} height={40} name="skill-icons:discord"/></span>
-        <span class="bg-neutral-900 rounded p-0.5">BoogieMonster1O1</span>
-      </li>
-    </ul>
+    <div class="grid grid-cols-2 lg:grid-cols-2 gap-4">
+      {contacts.map((data) => <ContactCard contact={data} />)}
+    </div>
   </div>
 </section>
