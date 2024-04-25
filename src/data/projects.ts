@@ -3,6 +3,7 @@ export interface ProjectEntry {
   name: string;
   description: string;
   avatarUrl: string | null;
+  alt: string | undefined;
   githubUrl: string;
   techStack: string[];
 }
@@ -13,6 +14,7 @@ export const projects: ProjectEntry[] = [
     name: 'InnateMC',
     description: 'A native macOS Minecraft launcher',
     avatarUrl: 'https://avatars.githubusercontent.com/u/122551453?s=200&v=4',
+    alt: "InnateMC logo",
     githubUrl: 'https://github.com/InnateMC/InnateMC',
     techStack: ['Swift', 'SwiftUI']
   },
@@ -21,6 +23,7 @@ export const projects: ProjectEntry[] = [
     name: 'BMTCMate',
     description: 'A mobile app for checking BMTC bus timings',
     avatarUrl: 'https://github.com/heftymouse/bmtcmate/blob/main/BmtcMate/Assets.xcassets/AppIcon.appiconset/Untitled.png?raw=true',
+    alt: 'BMTCMate logo',
     githubUrl: 'https://github.com/heftybyte/BMTCMate',
     techStack: ['Swift', 'SwiftUI']
   },
@@ -29,6 +32,7 @@ export const projects: ProjectEntry[] = [
     name: 'Legacy Fabric',
     description: 'Running Fabric loader on older versions of Minecraft',
     avatarUrl: 'https://legacyfabric.net/res/img/logo.png',
+    alt: 'Legacy Fabric pack.png logo',
     githubUrl: 'https://github.com/Legacy-Fabric/',
     techStack: ['Java', 'Minecraft']
   },
@@ -37,6 +41,7 @@ export const projects: ProjectEntry[] = [
     name: 'Dimensional Doors',
     description: 'A Minecraft mod that adds pocket dimensions',
     avatarUrl: 'https://media.forgecdn.net/avatars/362/124/637528582964080834.png',
+    alt: 'Dimensional Doors Monolith logo',
     githubUrl: 'https://github.com/DimensionalDoors/DimDoors',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -45,6 +50,7 @@ export const projects: ProjectEntry[] = [
     name: 'Project Kula',
     description: 'A social media platform for a college',
     avatarUrl: 'https://avatars.githubusercontent.com/u/153053310?s=200&v=4',
+    alt: 'Project Kula logo',
     githubUrl: 'https://github.com/ProjectKula',
     techStack: [
       'Swift',
@@ -59,7 +65,8 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'kvshort',
     description: 'A URL shortener that runs on Cloudflare Workers',
-    avatarUrl: null,
+    avatarUrl: 'https://github.com/BoogieMonster1O1/kvshort/blob/main/static/logo.png?raw=true',
+    alt: 'kvshort chain link logo',
     githubUrl: 'https://github.com/BoogieMonster1O1/kvshort',
     techStack: [
       'Svelte',
@@ -80,7 +87,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Forestry',
     description: 'A macOS app for urban farming and tree planting',
-     avatarUrl: null,
+    avatarUrl: null,
     githubUrl: 'https://github.com/BoogieMonster1O1/Forestry',
     techStack: ['Swift', 'SwiftUI']
   },
@@ -97,6 +104,7 @@ export const projects: ProjectEntry[] = [
     name: 'Invading Taters',
     description: 'A space invaders clone about potatoes',
     avatarUrl: 'https://cdn.discordapp.com/emojis/679645875928301601.webp?size=96&quality=lossless',
+    alt: 'Tiny Potato logo',
     githubUrl: 'https://github.com/BoogieMonster1O1/InvadingTaters',
     techStack: ['C++', 'OpenGL']
   },
@@ -113,6 +121,7 @@ export const projects: ProjectEntry[] = [
     name: 'Vimc',
     description: 'Vim-like editing in Minecraft',
     avatarUrl: 'https://github.com/BoogieMonster1O1/vimc/blob/1.20/src/main/resources/assets/vimc/img.png?raw=true',
+    alt: 'Vimc logo',
     githubUrl: 'https://github.com/BoogieMonster1O1/Vimc',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -161,6 +170,7 @@ export const projects: ProjectEntry[] = [
     name: 'Enchantments HUD',
     description: 'A Minecraft mod that shows enchantments on the HUD',
     avatarUrl: 'https://github.com/BoogieMonster1O1/enchantments-hud/blob/master/src/main/resources/assets/modid/icon.png?raw=true',
+    logo: 'Mod ID logo',
     githubUrl: 'https://github.com/BoogieMonster1O1/Enchantments-HUD',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -169,6 +179,7 @@ export const projects: ProjectEntry[] = [
     name: 'Sudeep\'s Carts',
     description: 'A Minecraft mod that allows you check IRCTC train availability',
     avatarUrl: 'https://github.com/StudiousGarbanzo/sudeeps-carts/blob/main/src/main/resources/assets/sudeepscarts/icon.png?raw=true',
+    logo: 'Mod ID logo',
     githubUrl: 'https://github.com/StudiousGarbanzo/sudeeps-carts',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -217,6 +228,7 @@ export const projects: ProjectEntry[] = [
     name: 'Personal Website',
     description: 'The website you are currently on',
     avatarUrl: '/pfp.png',
+    alt: 'Profile Picture',
     githubUrl: 'https://github.com/BoogieMonster1O1/shrishdeshpande',
     techStack: ['TypeScript', 'Astro', 'Tailwind CSS']
   }
