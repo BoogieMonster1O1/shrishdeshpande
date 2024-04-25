@@ -12,7 +12,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'InnateMC',
     description: 'A native macOS Minecraft launcher',
-    avatarUrl: null,
+    avatarUrl: 'https://avatars.githubusercontent.com/u/122551453?s=200&v=4',
     githubUrl: 'https://github.com/InnateMC/InnateMC',
     techStack: ['Swift', 'SwiftUI']
   },
@@ -20,7 +20,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'BMTCMate',
     description: 'A mobile app for checking BMTC bus timings',
-    avatarUrl: null,
+    avatarUrl: 'https://github.com/heftymouse/bmtcmate/blob/main/BmtcMate/Assets.xcassets/AppIcon.appiconset/Untitled.png?raw=true',
     githubUrl: 'https://github.com/heftybyte/BMTCMate',
     techStack: ['Swift', 'SwiftUI']
   },
@@ -28,7 +28,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Legacy Fabric',
     description: 'Running Fabric loader on older versions of Minecraft',
-    avatarUrl: null,
+    avatarUrl: 'https://legacyfabric.net/res/img/logo.png',
     githubUrl: 'https://github.com/Legacy-Fabric/',
     techStack: ['Java', 'Minecraft']
   },
@@ -36,7 +36,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Dimensional Doors',
     description: 'A Minecraft mod that adds pocket dimensions',
-    avatarUrl: null,
+    avatarUrl: 'https://media.forgecdn.net/avatars/362/124/637528582964080834.png',
     githubUrl: 'https://github.com/DimensionalDoors/DimDoors',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -44,7 +44,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Project Kula',
     description: 'A social media platform for a college',
-    avatarUrl: null,
+    avatarUrl: 'https://avatars.githubusercontent.com/u/153053310?s=200&v=4',
     githubUrl: 'https://github.com/ProjectKula',
     techStack: [
       'Swift',
@@ -53,6 +53,19 @@ export const projects: ProjectEntry[] = [
       'Svelte',
       'TypeScript',
       'Tailwind CSS'
+    ]
+  },
+  {
+    slug: null,
+    name: 'kvshort',
+    description: 'A URL shortener that runs on Cloudflare Workers',
+    avatarUrl: null,
+    githubUrl: 'https://github.com/BoogieMonster1O1/kvshort',
+    techStack: [
+      'Svelte',
+      'Typescript',
+      'Tailwind CSS',
+      'Cloudflare'
     ]
   },
   {
@@ -67,7 +80,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Forestry',
     description: 'A macOS app for urban farming and tree planting',
-    avatarUrl: null,
+     avatarUrl: null,
     githubUrl: 'https://github.com/BoogieMonster1O1/Forestry',
     techStack: ['Swift', 'SwiftUI']
   },
@@ -83,7 +96,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Invading Taters',
     description: 'A space invaders clone about potatoes',
-    avatarUrl: null,
+    avatarUrl: 'https://cdn.discordapp.com/emojis/679645875928301601.webp?size=96&quality=lossless',
     githubUrl: 'https://github.com/BoogieMonster1O1/InvadingTaters',
     techStack: ['C++', 'OpenGL']
   },
@@ -99,7 +112,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Vimc',
     description: 'Vim-like editing in Minecraft',
-    avatarUrl: null,
+    avatarUrl: 'https://github.com/BoogieMonster1O1/vimc/blob/1.20/src/main/resources/assets/vimc/img.png?raw=true',
     githubUrl: 'https://github.com/BoogieMonster1O1/Vimc',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -147,7 +160,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Enchantments HUD',
     description: 'A Minecraft mod that shows enchantments on the HUD',
-    avatarUrl: null,
+    avatarUrl: 'https://github.com/BoogieMonster1O1/enchantments-hud/blob/master/src/main/resources/assets/modid/icon.png?raw=true',
     githubUrl: 'https://github.com/BoogieMonster1O1/Enchantments-HUD',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -155,7 +168,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Sudeep\'s Carts',
     description: 'A Minecraft mod that allows you check IRCTC train availability',
-    avatarUrl: null,
+    avatarUrl: 'https://github.com/StudiousGarbanzo/sudeeps-carts/blob/main/src/main/resources/assets/sudeepscarts/icon.png?raw=true',
     githubUrl: 'https://github.com/StudiousGarbanzo/sudeeps-carts',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -203,7 +216,7 @@ export const projects: ProjectEntry[] = [
     slug: null,
     name: 'Personal Website',
     description: 'The website you are currently on',
-    avatarUrl: null,
+    avatarUrl: '/pfp.png',
     githubUrl: 'https://github.com/BoogieMonster1O1/shrishdeshpande',
     techStack: ['TypeScript', 'Astro', 'Tailwind CSS']
   }
