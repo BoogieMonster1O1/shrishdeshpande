@@ -3,7 +3,7 @@ export interface ProjectEntry {
   name: string;
   description: string;
   avatarUrl: string | null;
-  alt: string | undefined;
+  alt?: string;
   githubUrl: string;
   techStack: string[];
 }
@@ -170,7 +170,7 @@ export const projects: ProjectEntry[] = [
     name: 'Enchantments HUD',
     description: 'A Minecraft mod that shows enchantments on the HUD',
     avatarUrl: 'https://github.com/BoogieMonster1O1/enchantments-hud/blob/master/src/main/resources/assets/modid/icon.png?raw=true',
-    logo: 'Mod ID logo',
+    alt: 'Mod ID logo',
     githubUrl: 'https://github.com/BoogieMonster1O1/Enchantments-HUD',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
@@ -179,7 +179,7 @@ export const projects: ProjectEntry[] = [
     name: 'Sudeep\'s Carts',
     description: 'A Minecraft mod that allows you check IRCTC train availability',
     avatarUrl: 'https://github.com/StudiousGarbanzo/sudeeps-carts/blob/main/src/main/resources/assets/sudeepscarts/icon.png?raw=true',
-    logo: 'Mod ID logo',
+    alt: 'Mod ID logo',
     githubUrl: 'https://github.com/StudiousGarbanzo/sudeeps-carts',
     techStack: ['Java', 'Minecraft', 'OpenGL']
   },
