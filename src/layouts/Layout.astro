@@ -36,11 +36,11 @@
 
   <body class="bg-neutral-900 text-white">
     <div class="flex flex-col min-h-screen items-center">
-      <div class="flex flex-row justify-between m-4 pb-2 border-b border-neutral-600 max-w-screen-md w-screen overflow-y-auto gap-6 items-center max-md:p-4">
+      <div class="flex sm:flex-row max-sm:flex-col justify-between m-4 pb-2 border-b border-neutral-600 max-w-screen-md w-screen overflow-y-auto gap-6 max-sm:gap-2 items-center max-md:p-4">
         <h1 class="flex-1 text-2xl sm:text-3xl lg:text-4xl">
           Shrish Deshpande
         </h1>
-        <!--<div class="contents text-lg max-sm:text-xl max-sm:hidden">
+        <div class="flex text-neutral-300 max-sm:gap-4 sm:contents text-lg max-sm:text-xl">
           <div class="flex">
             <a href="/">About</a>
           </div>
@@ -53,11 +53,12 @@
           <div class="flex">
             <a href="/blog">Blog</a>
           </div>
-             </div>-->
-        <Navbar />
+        </div>
       </div>
 
-      <slot />
+      <div class="p-2">
+        <slot />
+      </div>
 
       <Footer />
     </div>

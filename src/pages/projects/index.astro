@@ -6,10 +6,10 @@
 ---
 
 <Layout>
-  <section class="flex flex-1 flex-col justify-start items-center mx-auto shadow-md">
+  <section class="flex flex-1 flex-col gap-2 justify-start items-center mx-auto shadow-md">
     <h1 class="text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 w-full p-4 rounded-md max-w-screen-md" >Projects</h1>
 
-    <div class="grid md:grid-cols-2 grid-cols-1 gap-4 m-4 max-w-screen-md">
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-2 max-w-screen-md">
       {projects.map((project) => <ProjectCard project={project} />)}
     </div>
   </section>

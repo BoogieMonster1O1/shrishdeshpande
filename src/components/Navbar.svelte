@@ -1,5 +1,11 @@
 <script>
  let isOpen = false;
+
+ import { onMount } from 'svelte';
+
+ onMount(async () => {
+     console.log("bruh");
+ });
 </script>
 
 <nav class="p-4">
