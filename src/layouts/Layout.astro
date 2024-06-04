@@ -2,6 +2,7 @@
   import Footer from "../components/Footer.astro";
   import '../styles/colors.css';
   import '../styles/global.css';
+  import Navbar from "../components/Navbar.svelte";
 
   let pathName = Astro.url.pathname;
 
@@ -36,10 +37,10 @@
   <body class="bg-neutral-900 text-white">
     <div class="flex flex-col min-h-screen items-center">
       <div class="flex flex-row justify-between m-4 pb-2 border-b border-neutral-600 max-w-screen-md w-screen overflow-y-auto gap-6 items-center max-md:p-4">
-        <h1 class="flex-1 text-2xl sm:text-3xl md:text-4xl">
+        <h1 class="flex-1 text-2xl sm:text-3xl lg:text-4xl">
           Shrish Deshpande
         </h1>
-        <div class="contents text-lg md:text-xl">
+        <!--<div class="contents text-lg max-sm:text-xl max-sm:hidden">
           <div class="flex">
             <a href="/">About</a>
           </div>
@@ -52,7 +53,8 @@
           <div class="flex">
             <a href="/blog">Blog</a>
           </div>
-        </div>
+             </div>-->
+        <Navbar />
       </div>
 
       <slot />
