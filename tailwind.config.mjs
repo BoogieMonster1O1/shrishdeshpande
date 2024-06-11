@@ -2,8 +2,8 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {
-            fontSize: {
+               extend: {
+                 fontSize: {
                 caption: ['0.85rem', '1rem'],
                 body: ['1rem', '1.62rem'],
                 h6: ['1.15rem', { lineHeight: '1.75rem', fontWeight: 600 }],
