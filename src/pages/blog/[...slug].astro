@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'blog'>;
+}
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map((e) => ({
+    params: {
+      slug: e.slug
+    },
+    props: { entry: e }
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<h1>{entry.data.title}</h1>
+<span class="text-neutral-500 dark:text-neutral-400">
+		<!--{formatDate(entry.data.date, true)}-->
+	</span>
+<hr class="my-4" />
+<div class="content">
+  <Content class="content" />
+</div>

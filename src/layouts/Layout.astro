@@ -3,13 +3,6 @@
   import '../styles/colors.css';
   import '../styles/global.css';
   import Navbar from "../components/Navbar.svelte";
-
-  let pathName = Astro.url.pathname;
-
-  let isAbout = pathName == '/';
-  let isProjects = pathName.startsWith('/projects');
-  let isConnect = pathName == '/connect';
-  let isBlog = pathName.startsWith('/blog');
 ---
 
 <!doctype html>
