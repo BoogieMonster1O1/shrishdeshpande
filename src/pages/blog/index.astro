@@ -1,7 +1,6 @@
 ---
   import Layout from '../../layouts/Layout.astro'
   import { getCollection } from 'astro:content';
-  import { formatDate } from '../../lib/date';
 
   const collection = (await getCollection('blog')).filter((e) => !e.id.startsWith("DRAFT-")).sort((a, b) => {
 	  const d1 = a.data.date;
