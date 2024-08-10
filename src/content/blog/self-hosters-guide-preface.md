@@ -9,7 +9,7 @@ Maybe you have an old laptop lying around that you would like to put to good use
 
 Self-hosting puts you in the driver’s seat. You're managing your own data, infrastructure, and services. You get access to this unparalleled control and flexibility you wouldn't be able to without. The possibilities truly are limitless.
 
-But what exactly makes up a server? Surprisingly, not much! Servers are just regular computers with one very, very important difference: they're always on. They're designed to be powered up 24/7 and always connected to the internet. 
+But what exactly makes up a server? Surprisingly, not much! Servers are just regular computers with one very, very important difference: they're always on. They're meant to be powered up 24/7 and always connected to the internet. 
 
 And the best part is - the actual hardware specs don’t matter nearly as much as you might think. Beefier specs will indeed help with performance. But even mediocre, older machines will still work pretty well. The important thing is that your server stays online and connected.
 
