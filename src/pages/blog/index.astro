@@ -3,7 +3,7 @@
   import { getCollection } from 'astro:content';
   import { formatDate } from '../../lib/date';
 
-  const collection = (await getCollection('blog')).sort((a, b) => {
+  const collection = (await getCollection('blog')).filter((e) => !e.id.startsWith("DRAFT-")).sort((a, b) => {
 	  const d1 = a.data.date;
 	  const d2 = b.data.date;
 	  if (d1 < d2) return 1;
@@ -13,7 +13,7 @@
 ---
 
 <Layout>
-  <section class="p-2 flex flex-1 flex-col justify-start items-center mx-auto gap-2">
+  <section class="p-2 flex flex-1 flex-col justify-start items-center mx-auto gap-5">
     <h1 class="text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 p-4 w-screen rounded-md max-w-screen-md" >Blog</h1>
     <div class="flex flex-col gap-5 flex-1 w-full">
 		  {collection.map((e) => (
