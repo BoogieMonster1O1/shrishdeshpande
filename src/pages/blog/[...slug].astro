@@ -23,11 +23,11 @@
 
 <BlogLayout>
   <div class="flex flex-col gap-2 max-w-screen-md w-full">
-    <h1 class="text-h2 mx-4">{entry.data.title}</h1>
-    <span class="text-neutral-500 dark:text-neutral-400 mx-4">
+    <h1 class="text-h2 max-md:mx-4">{entry.data.title}</h1>
+    <span class="text-neutral-500 dark:text-neutral-400 max-md:mx-4">
       {`${Intl.DateTimeFormat(undefined, { dateStyle: "long" }).format(entry.data.date)}`}
 	  </span>
-    <div class="flex flex-col gap-6 mt-4 mb-8 flex-1 blog-post text-neutral-200 leading-8 mx-4">
+    <div class="flex flex-col gap-6 mt-4 mb-8 flex-1 blog-post text-neutral-200 leading-8 max-md:mx-4">
       <Content />
     </div>
   </div>
