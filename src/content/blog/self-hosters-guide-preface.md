@@ -21,7 +21,7 @@ I first got into self-hosting when I realized I had an old laptop that I never r
 
 I'm currently running two servers at home - a 2014 HP laptop and a 2014 Mac Mini. They're pretty bad in today's terms for general-purpose usage. So I installed Linux on them and made them servers. The best way to breathe life into your old hardware is to turn them into servers. Old computers typically have more than enough memory and processing power for a server, which don't even need much at all!
 
-Okay, now that you've understood the how and why, let's talk about the what. There are really no limits to what you can do. Want a secure, personal VPN? Set up Tailscale. Need a place to store and stream your media? Try running your own media server with Plex or Jellyfin. If you like to keep your documents organized, Paperless-ngx might be your thing There's always something you can self host for anything you need.
+Okay, now that you've understood the how and why, let's talk about the what. There are really no limits to what you can do. Want a secure, personal VPN? Set up Tailscale. Need a place to store and stream your media? Try running your own media server with Jellyfin. If you like to keep your documents organized, Paperless-ngx might be your thing. There's always something you can self host for anything you need.
 
 It gets even better if you're a developer. Hosting your own Git repositories and running your own CI/CD server is only the beginning. Your server can become a powerhouse for all your needs - a remote computer on which you offload everything you need to do. In essence, you're replacing services you use online with services you run.
 
