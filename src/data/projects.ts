@@ -24,7 +24,7 @@ export const projects: ProjectEntry[] = [
     description: 'A mobile app for checking BMTC bus timings',
     avatarUrl: 'https://github.com/heftymouse/bmtcmate/blob/main/BmtcMate/Assets.xcassets/AppIcon.appiconset/Untitled.png?raw=true',
     alt: 'BMTCMate logo',
-    githubUrl: 'https://github.com/heftybyte/BMTCMate',
+    githubUrl: 'https://github.com/heftymouse/BMTCMate',
     techStack: ['Swift', 'SwiftUI']
   },
   {
