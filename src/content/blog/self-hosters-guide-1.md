@@ -80,7 +80,7 @@ RHEL, Fedora Server, and openSUSE Leap, come with an SSH server installed and en
 
 To connect to your server using SSH, you'll first need to find out its IP address. The easiest way to find this is by accessing your server directly and running `ip addr` in the terminal. Alternatively, you can scan your local IP address range using a tool like [Angry IP Scanner](https://angryip.org/) or `nmap`. Make sure both the server and your computer are on the same network!
 
-Most macOS and Linux distributions come with an SSH client pre-installed. To connect to your server, run the following command in your terminal:
+Windows, macOS and most linux distributions come with an SSH client pre-installed. To connect to your server, run the following command in your terminal:
 
 ```
 ssh <username>@<ip address>
