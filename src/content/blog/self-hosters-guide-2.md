@@ -1,8 +1,8 @@
 ---
 slug: self-hosters-guide-2
-title: DRAFT The Self Hoster's Guide to the Galaxy - Part 2
+title: The Self Hoster's Guide to the Galaxy - Part 2
 description: Networking and more
-date: 2024-08-10
+date: 2024-08-11
 ---
 
 *This is the second part in my series on self hosting. [Check out Part 1](/blog/self-hosters-guide-1)!*
