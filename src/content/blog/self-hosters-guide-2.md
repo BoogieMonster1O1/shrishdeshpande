@@ -17,7 +17,7 @@ To address this issue, classful addressing was abandoned in favor of dynamic, cl
 
 Now you might ask — alright, if I’ve got a single public IP address, how is that a problem? The truth is, you might not have a public IP address at all. As a self-hoster, you rely on ports being forwarded to your server so that outside traffic can reach it. If you’re trying to self-host on an organization's network, good luck with that — port forwarding is unlikely to happen.
 
-Even if you’re self-hosting at home, you'll probably find yourself behind a Carrier-Grade NAT (CGNAT). So your neighbours are probably sharing the same public IP address as you. And CGNATs block incoming connections are blocked by default.
+Even if you’re self-hosting at home, you'll probably find yourself behind a Carrier-Grade NAT (CGNAT). So your neighbours are probably sharing the same public IP address as you. And CGNATs block all incoming connections by default.
 
 ## IPv6, Your new friend
 
@@ -50,7 +50,7 @@ This command adds the SSH service to the public zone, which is the default zone.
 
 Here's the kicker, **don't expose services to the Internet unless you absolutely need to**. If you're running a web server, you'll need to expose port 80 and 443. But if you're running a personal Jellyfin instance, you don't need to expose it to the Internet. You can access it from your local network, through a VPN (which I'll be covering in Part 4), or through a secure tunnel.
 
-And even though you just did it, **don't expose SSH to the Internet**. Its a massive security risk. You're just asking to be hacked. Its time to disable that. You should still be able to access it from your local network. Here's how to do that:
+And even though you just did it, **don't expose SSH to the Internet**. It's a massive security risk. You're just asking to be hacked. It's time to disable that. You should still be able to access it from your local network. Here's how to do that:
 
 ```
 sudo firewall-cmd --add-service=ssh --zone=home
