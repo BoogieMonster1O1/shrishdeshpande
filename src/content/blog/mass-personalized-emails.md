@@ -5,6 +5,8 @@ description: How I added a personal touch to cold emails
 date: 2024-10-03
 ---
 
+*If you're just here for the code, [here's the link](https://github.com/BoogieMonster1O1/emailspam).*
+
 As a 2nd year engineering student, I was tasked with creating a Design Thinking project. What's so 'Design Thinking' about the project, you ask? Well, it's about understanding the user's needs and designing a solution that meets those needs. Instead of starting with a solution, you start with a problem and work your way towards a solution, based on user feedback.
 
 Naturally, surveys are a big part of this process. They're great for understanding what the user wants, what they like, what they do, and so on. Everyone at my college made a Google Form, and sent it to the entire college through the email groups. The email groups forwarded emails to all students within them, and they're a pretty good solution for getting your survey out there.
