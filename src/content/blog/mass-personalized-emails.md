@@ -1,7 +1,7 @@
 ---
 slug: mass-personalized-emails
-title: The Personal Touch
-description: How I added a personal touch to a usual cold email
+title: The Power of Personalization, one by one
+description: How I added a personal touch to cold emails
 date: 2024-10-03
 ---
 
